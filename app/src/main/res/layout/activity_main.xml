@@ -1,231 +1,198 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id = "@+id/base"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
-    android:padding="40sp"
-    android:orientation="vertical"
-    android:background="#40748F"
+    android:padding="40dp"
+    android:background="#92AA4F4F"
+
+    tools:context=".MainActivity"
     >
     <EditText
-        android:background="#D6E7F1"
-        android:layout_width = "match_parent"
-        android:layout_height="0dp"
-        android:layout_weight = "8"
-        android:text = "Input example"
-        android:textSize="35sp"
-        android:gravity="center_vertical|end"
-        android:paddingRight="15dp"
-        android:textColor="#554E4E"
+        android:id = "@+id/example"
+        android:layout_marginTop="70dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="right"
+        android:background="#ECD6D6"
+
+        android:hint="Введите пример"
+        android:textSize="30sp"
+        android:padding="10dp"
+
         />
-    <LinearLayout
-        android:background="#4885A5"
-        android:orientation="horizontal"
-        android:layout_weight="4"
-        android:layout_height="0dp"
-        android:layout_width="match_parent"
-        >
-        <TextView
-            android:id ="@+id/multiply"
-            android:textStyle="bold"
-            android:text="*"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:textSize="45sp"
-            android:gravity="center"
-            android:layout_width="0dp"
-            />
-        <TextView
-            android:id ="@+id/divide"
-            android:textStyle="bold"
-            android:text="/"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:textSize="45sp"
-            android:gravity="center"
-            android:layout_width="0dp"
-            />
-        <TextView
-            android:id ="@+id/erase"
-            android:textStyle="bold"
-            android:text="erase"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:textSize="35sp"
-            android:gravity="center"
-            android:layout_width="0dp"
-            />
-    </LinearLayout>
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_weight="12"
-        android:layout_height="0dp"
+    <TextView
+        android:id="@+id/result"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/example"
+        android:gravity="right"
+        android:padding = "10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="#ECD6D6"
+
+        android:hint="Результат"
+        android:textSize="30sp" />
+    <RelativeLayout
+        android:layout_below="@id/result"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
         >
         <LinearLayout
-            android:orientation="vertical"
-            android:layout_weight="2"
-            android:layout_height="match_parent"
-            android:layout_width="0dp"
-            android:background="#8AC2DF"
+            android:id = "@+id/operations"
+
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
             >
-            <TextView
-                android:id = "@+id/digit_one"
-                android:text="1"
-                android:textSize="45sp"
-
-                android:layout_weight="1"
-                android:layout_height="0dp"
-                android:layout_width = "match_parent"
-
-                android:gravity="center"
+            <Button
+                android:id = "@+id/eraseAll"
+                style="@style/operations"
+                android:text="C"
                 />
-            <TextView
-                android:id = "@+id/digit_four"
-                android:text="4"
-                android:textSize="45sp"
-
-                android:layout_weight="1"
-                android:layout_height="0dp"
-                android:layout_width = "match_parent"
-
-                android:gravity="center"
-                />
-            <TextView
-                android:id = "@+id/digit_seven"
-                android:text="7"
-                android:textSize="45sp"
-
-                android:layout_weight="1"
-                android:layout_height="0dp"
-                android:layout_width = "match_parent"
-
-                android:gravity="center"
-                />
-        </LinearLayout>
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_weight="2"
-            android:layout_height="match_parent"
-            android:layout_width="0dp"
-            android:background="#8AC2DF"
-            >
-            <TextView
-                android:id = "@+id/digit_two"
-                android:text="2"
-                android:textSize="45sp"
-
-                android:layout_weight="1"
-                android:layout_height="0dp"
-                android:layout_width = "match_parent"
-
-                android:gravity="center"
-                />
-            <TextView
-                android:id = "@+id/digit_five"
-                android:text="5"
-                android:textSize="45sp"
-
-                android:layout_weight="1"
-                android:layout_height="0dp"
-                android:layout_width = "match_parent"
-
-                android:gravity="center"
-                />
-            <TextView
-                android:id = "@+id/digit_eight"
-                android:text="8"
-                android:textSize="45sp"
-
-                android:layout_weight="1"
-                android:layout_height="0dp"
-                android:layout_width = "match_parent"
-
-                android:gravity="center"
-                />
-        </LinearLayout>
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_weight="2"
-            android:layout_height="match_parent"
-            android:layout_width="0dp"
-            android:background="#8AC2DF"
-            >
-            <TextView
-                android:id = "@+id/digit_three"
-                android:text="3"
-                android:textSize="45sp"
-
-                android:layout_weight="1"
-                android:layout_height="0dp"
-                android:layout_width = "match_parent"
-
-                android:gravity="center"
-                />
-            <TextView
-                android:id = "@+id/digit_six"
-                android:text="6"
-                android:textSize="45sp"
-
-                android:layout_weight="1"
-                android:layout_height="0dp"
-                android:layout_width = "match_parent"
-
-                android:gravity="center"
-                />
-            <TextView
-                android:id = "@+id/digit_nine"
-                android:text="9"
-                android:textSize="45sp"
-
-                android:layout_weight="1"
-                android:layout_height="0dp"
-                android:layout_width = "match_parent"
-
-                android:gravity="center"
-                />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_weight="3"
-            android:layout_height="match_parent"
-            android:layout_width="0dp"
-            android:orientation="vertical"
-            android:background="#4885A5"
-            >
-            <TextView
+            <Button
                 android:id = "@+id/add"
+                style="@style/operations"
                 android:text="+"
-
-                android:layout_weight="1"
-                android:layout_height="0dp"
-                android:layout_width="match_parent"
-                android:textSize = "45sp"
-                android:gravity="center"
                 />
-            <TextView
+            <Button
                 android:id = "@+id/subtract"
+                style="@style/operations"
                 android:text="-"
-
-                android:layout_weight="1"
-                android:layout_height="0dp"
-                android:layout_width="match_parent"
-                android:textSize = "45sp"
-                android:gravity="center"
                 />
-            <TextView
-                android:id = "@+id/equal"
-                android:text="="
 
+            <ImageButton
+                android:id="@+id/erase"
+                style="@style/operations"
+                android:layout_height="match_parent"
+                android:src="@drawable/erase" />
+        </LinearLayout>
+        <LinearLayout
+            android:id = "@+id/digitButtons"
+
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/operations"
+
+            android:orientation="vertical"
+            >
+            <LinearLayout
                 android:layout_weight="1"
                 android:layout_height="0dp"
                 android:layout_width="match_parent"
-                android:textSize = "45sp"
-                android:gravity="center"
+                android:orientation="horizontal"
+                >
+                <Button
+                    android:id="@+id/digit_1"
+                    style="@style/digitButton"
+                    android:text="1"
+                    />
+
+                <Button
+                    android:id="@+id/digit_2"
+                    style="@style/digitButton"
+                    android:text="2" />
+
+                <Button
+                    android:id="@+id/digit_3"
+                    style="@style/digitButton"
+                    android:text="3"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                >
+                <Button
+                    android:id="@+id/digit_4"
+                    style="@style/digitButton"
+                    android:text="4"
+                    />
+
+                <Button
+                    android:id="@+id/digit_5"
+                    style="@style/digitButton"
+                    android:text="5" />
+
+                <Button
+                    android:id="@+id/digit_6"
+                    style="@style/digitButton"
+                    android:text="9"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                >
+                <Button
+                    android:id="@+id/digit_7"
+                    style="@style/digitButton"
+                    android:text="7"
+                    />
+
+                <Button
+                    android:id="@+id/digit_8"
+                    style="@style/digitButton"
+                    android:text="8" />
+
+                <Button
+                    android:id="@+id/digit_9"
+                    style="@style/digitButton"
+                    android:text="9"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                >
+                <Button
+                    style="@style/digitButton"
+                    android:visibility="invisible"
+                    />
+
+                <Button
+                    android:id="@+id/digit_0"
+                    style="@style/digitButton"
+                    android:text="0" />
+
+                <Button
+                    style="@style/digitButton"
+                    android:visibility="invisible"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_toRightOf="@id/digitButtons"
+            android:layout_below="@id/operations"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:id = "@+id/multiply"
+                style="@style/operations"
+                android:text="*"
+                />
+            <Button
+                android:id = "@+id/divide"
+                style="@style/operations"
+                android:text="/"
+                />
+            <Button
+                android:id = "@+id/equal"
+                style="@style/operations"
+                android:text="="
                 />
 
         </LinearLayout>
-
-    </LinearLayout>
-</LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
