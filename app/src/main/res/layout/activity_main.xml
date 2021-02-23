@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:padding="40sp"
+    android:orientation="vertical"
+    android:background="#40748F"
+    >
+    <EditText
+        android:background="#D6E7F1"
+        android:layout_width = "match_parent"
+        android:layout_height="0dp"
+        android:layout_weight = "8"
+        android:text = "Input example"
+        android:textSize="35sp"
+        android:gravity="center_vertical|end"
+        android:paddingRight="15dp"
+        android:textColor="#554E4E"
+        />
+    <LinearLayout
+        android:background="#4885A5"
+        android:orientation="horizontal"
+        android:layout_weight="4"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        >
+        <TextView
+            android:id ="@+id/multiply"
+            android:textStyle="bold"
+            android:text="*"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textSize="45sp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            />
+        <TextView
+            android:id ="@+id/divide"
+            android:textStyle="bold"
+            android:text="/"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textSize="45sp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            />
+        <TextView
+            android:id ="@+id/erase"
+            android:textStyle="bold"
+            android:text="erase"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textSize="35sp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight="12"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:background="#8AC2DF"
+            >
+            <TextView
+                android:id = "@+id/digit_one"
+                android:text="1"
+                android:textSize="45sp"
+
+                android:layout_weight="1"
+                android:layout_height="0dp"
+                android:layout_width = "match_parent"
+
+                android:gravity="center"
+                />
+            <TextView
+                android:id = "@+id/digit_four"
+                android:text="4"
+                android:textSize="45sp"
+
+                android:layout_weight="1"
+                android:layout_height="0dp"
+                android:layout_width = "match_parent"
+
+                android:gravity="center"
+                />
+            <TextView
+                android:id = "@+id/digit_seven"
+                android:text="7"
+                android:textSize="45sp"
+
+                android:layout_weight="1"
+                android:layout_height="0dp"
+                android:layout_width = "match_parent"
+
+                android:gravity="center"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:background="#8AC2DF"
+            >
+            <TextView
+                android:id = "@+id/digit_two"
+                android:text="2"
+                android:textSize="45sp"
+
+                android:layout_weight="1"
+                android:layout_height="0dp"
+                android:layout_width = "match_parent"
+
+                android:gravity="center"
+                />
+            <TextView
+                android:id = "@+id/digit_five"
+                android:text="5"
+                android:textSize="45sp"
+
+                android:layout_weight="1"
+                android:layout_height="0dp"
+                android:layout_width = "match_parent"
+
+                android:gravity="center"
+                />
+            <TextView
+                android:id = "@+id/digit_eight"
+                android:text="8"
+                android:textSize="45sp"
+
+                android:layout_weight="1"
+                android:layout_height="0dp"
+                android:layout_width = "match_parent"
+
+                android:gravity="center"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:background="#8AC2DF"
+            >
+            <TextView
+                android:id = "@+id/digit_three"
+                android:text="3"
+                android:textSize="45sp"
+
+                android:layout_weight="1"
+                android:layout_height="0dp"
+                android:layout_width = "match_parent"
+
+                android:gravity="center"
+                />
+            <TextView
+                android:id = "@+id/digit_six"
+                android:text="6"
+                android:textSize="45sp"
+
+                android:layout_weight="1"
+                android:layout_height="0dp"
+                android:layout_width = "match_parent"
+
+                android:gravity="center"
+                />
+            <TextView
+                android:id = "@+id/digit_nine"
+                android:text="9"
+                android:textSize="45sp"
+
+                android:layout_weight="1"
+                android:layout_height="0dp"
+                android:layout_width = "match_parent"
+
+                android:gravity="center"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:background="#4885A5"
+            >
+            <TextView
+                android:id = "@+id/add"
+                android:text="+"
+
+                android:layout_weight="1"
+                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:textSize = "45sp"
+                android:gravity="center"
+                />
+            <TextView
+                android:id = "@+id/subtract"
+                android:text="-"
+
+                android:layout_weight="1"
+                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:textSize = "45sp"
+                android:gravity="center"
+                />
+            <TextView
+                android:id = "@+id/equal"
+                android:text="="
+
+                android:layout_weight="1"
+                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:textSize = "45sp"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
