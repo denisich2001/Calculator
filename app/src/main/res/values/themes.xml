@@ -13,15 +13,4 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
-    <style name = "digitButton">
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_width">80dp</item>
-        <item name="android:layout_margin">2dp</item>
-        <item name="android:textSize">30sp</item>
-
-        <item name="backgroundTint">#C36D6D</item>
-    </style>
-    <style name="operations" parent="digitButton">
-        <item name="backgroundTint">#954949</item>
-    </style>
 </resources>
